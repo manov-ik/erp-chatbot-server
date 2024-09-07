@@ -5,9 +5,7 @@ from flask_cors import CORS
 import google.generativeai as genai
 from docx import Document
 from PyPDF2 import PdfReader
-from dotenv import load_dotenv
 
-load_dotenv()
 
 app = Flask(__name__)
 CORS(app) #Cross-Origin Resource Sharing
