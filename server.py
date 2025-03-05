@@ -25,6 +25,9 @@ doc = Document()
 
 if os.path.exists(doc_name):
     doc = Document(doc_name)
+else:
+    doc = Document()  # Create a new blank document
+    doc.save(doc_name) 
 
 
 doc2 = Document('docs/Employee Policy.docx')
